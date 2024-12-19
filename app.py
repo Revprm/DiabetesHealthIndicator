@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder='templates')
 CORS(app)
 logging.basicConfig(level=logging.DEBUG)
 
-model = joblib.load('models/XGBmodel.pkl')
+model = joblib.load('models/final_model.pkl')
 scaler = joblib.load('models/scaler.pkl')
 
 required_features = [
