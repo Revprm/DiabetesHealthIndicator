@@ -58,8 +58,10 @@ def predict():
         scaled_input_data = scale_input_features(input_data_values)
         
         prediction_value = generate_prediction(scaled_input_data)
+        confidence_value = model.predict_proba([scaled_input_data])[0][prediction_value]
 
-        return jsonify({"prediction": prediction_value})
+        return jsonify({"prediction": prediction_value
+                        , "confidence": confidence_value}), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
