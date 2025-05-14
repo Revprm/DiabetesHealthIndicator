@@ -13,7 +13,7 @@ This project aims to predict the likelihood of diabetes in patients based on var
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/DiabetesHealthIndicator.git
+   git clone https://github.com/revprm/DiabetesHealthIndicator.git
    ```
 
 2. Navigate to the project directory:
